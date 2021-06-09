@@ -14,7 +14,7 @@
   --yellow: #ffc107;
   --green: #24b96a; 
   --teal: #20c997;
-  --cyan: #17a2b8;
+  --cyan: #1b94b7;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
@@ -42,7 +42,7 @@
 
 
   .logo-main {
-    color: #24b96a !important;
+    /* color: #24b96a !important; */
   }
 
 html {
@@ -7570,7 +7570,7 @@ h1, h2, h3, h4, h5,
     width: 25%;
     font-size: 38px;
     font-weight: 200;
-    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 2px solid rgba(0, 0, 0, 0.05);
     color: rgb(25,140,201); }
     #timer .time:first-child {
       border-left: transparent; }
