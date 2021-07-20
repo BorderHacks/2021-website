@@ -561,7 +561,191 @@
 		</div>
 	</section> -->
 
+	
+	<section id="schedule" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <h2 style="color: #24b96a;">Schedule</h2>
+                    <p>Please Note That All Times Are In <strong>Eastern Time</strong><br></p>
+                </div>
+            </div>
+        </div><div>
+    <style>
+        .test h4{
+          padding: 0;
+          padding-bottom: 8px;
+          margin: 0;
+        }
+        .test p{
+          padding: 0;
+          margin: 0;
+        }
+        .test{
+            padding: 2rem;
+            color: black;
+            text-align: center;
+            background-color: #eeeeee;
+        }
+        .test:hover{
+          background-color: #888888;
+          transition: 300ms;
+        }
+        .selected{
+            background-color: #20a791;
+            color: black;
+            transition: 500ms;
+        }
+        .selected:hover{
+            background-color: #1b94b7;
+            color: black;
+        }
+        .hidden{
+            display: none;
+        }
+        .day{
+            text-align: left !important;
+            padding: 2rem;
+            /* background-color: #222222; */
+            color: white;
+            border-radius: 20px;
+            text-transform: capitalize !important;
+        }
 
+        .schedt{
+          padding: 20px;
+        }
+        .schedt p{
+          color: rgb(177, 177, 177);
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        .schedt h5{
+          font-weight: 200;
+          color: white;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row buttons">
+            <div id="b1" class="col-md-6 test selected" onclick="select(1)">
+              <h4>Day 1</h4>
+              <p>September 25</p>
+            </div>
+            <div id="b2" class="col-md-6 test" onclick="select(2)">
+              <h4>Day 2</h4>
+              <p>September 26</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="day" id="day1">
+          <div class="schedt">
+            <p>9:30 AM</p>
+            <h2>Team Formation</h2>
+          </div>
+          
+          <div class="schedt">
+              <p>10:00 AM</p>
+              <h2>Icebreakers / Casual Fun</h2>
+          </div>
+          
+          <div class="schedt">
+            <p>11:00 AM</p>
+            <h2>Hacking Begins / Opening Ceremonies</h2>
+          </div>
+    
+          <div class="schedt">
+            <p>11:30 AM</p>
+            <h2>Challenge AMA</h2>
+          </div>
+      
+          <div class="schedt">
+            <p>1:00 PM</p>
+            <h2>Hardware Trojan War</h2>
+          </div>
+  
+          <div class="schedt">
+            <p>2:05 PM</p>
+            <h2>Cybersecurity Talk [Title TBA]</h2>
+          </div>
+
+          <div class="schedt">
+            <p>4:15 PM</p>
+            <h2>LIVE Recruiter Networking on Discord</h2>
+          </div>
+
+          <div class="schedt">
+            <p>5:20 PM</p>
+            <h2>Technical Demo [Title TBA]</h2>
+          </div>
+
+          <div class="schedt">
+              <p>7:00 PM</p>
+              <h2>Submission Q&A</h2>
+          </div>
+
+          <div class="schedt">
+              <p>8:00 PM</p>
+              <h2>Day One Closing</h2>
+          </div>
+      
+        </div>
+
+        <div class="day hidden" id="day2">
+          
+          <div class="schedt">
+              <p>10:30 AM</p>
+              <h2>Day 2 Opening</h2>
+          </div>
+
+          <div class="schedt">
+            <p>12:00 PM</p>
+            <h2>Soft Submission Deadline</h2>
+          </div>
+
+          <div class="schedt">
+              <p>1:00 PM</p>
+              <h2>Hard Submission Deadline</h2>
+          </div>
+          
+          <div class="schedt">
+              <p>1:15 PM</p>
+              <h2>Gaming & Event Recap</h2>
+          </div>
+          
+          <div class="schedt">
+              <p>3:00 PM</p>
+              <h2>Award Ceremony & Closing</h2>
+          </div> 
+
+        </div>
+    </div>
+
+    <script>
+        var $id = function(id){return document.getElementById(id)};
+
+        function select(id){
+            let b1 = $id('b1');
+            let b2 = $id('b2');
+            let day1 = $id('day1');
+            let day2 = $id('day2');
+            b1.classList.remove('selected');
+            b2.classList.remove('selected');
+            day1.classList.add('hidden');
+            day2.classList.add('hidden');
+            switch(id){
+                case 1:
+                    b1.classList.add('selected');
+                    day1.classList.remove('hidden');
+                    break;
+                case 2:
+                    b2.classList.add('selected');
+                    day2.classList.remove('hidden');
+                    break;
+            }
+        }
+    </script>
+	
 	<section class="ftco-section testimony-section" id="sponsors">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
